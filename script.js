@@ -46,9 +46,9 @@ function atualizaTabela() {
 }
 
 function atualizaMediaFinal() {
-    let mediaFinal = calculaMediaFinal();
+    const mediaFinal = calculaMediaFinal();
 
-    window.document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    window.document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
     window.document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
